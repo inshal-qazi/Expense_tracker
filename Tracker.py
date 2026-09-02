@@ -1,5 +1,10 @@
 # only have to push on github
 import json
+gc = gspread.service_account(filename="Tracker.json")
+spreadsheet = gc.open_by_key("enter a sheets ink your working on)
+worksheet = spreadsheet.sheet1
+
+#another  json file where all api of sheets are can get google cloud store in json
 
 i = input("press (start or stop) to allow application to run: ").lower()
 
